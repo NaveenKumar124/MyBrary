@@ -1,12 +1,8 @@
-<head>
-  <link rel="stylesheet" href="assets/plugins/bootstrap-4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-  <link rel="stylesheet" href="uploads/stylesheets/main.css">
-  </head>
-
 <h2 class="page-header">New Author</h2>
 <form action="/authors" method="POST">
   <%- include('_form_fields') %>
-  <a href="/authors">Cancel</a>
-  <button type="submit">Create</button>
+  <div class="form-row form-row-end btn-row">
+    <a class="btn btn-danger" href="/authors">Cancel</a>
+    <button class="btn btn-primary" type="submit">Create</button>
+  </div>
 </form>
